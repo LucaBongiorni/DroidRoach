@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DroidRoach</string>
+    
+    <string name="RoachBaseActivityNoConnection">Looks like there is no internet connection, if so Droid Roach won\'t be able to work properly</string>
+  
+    
+    
+    <string name="MainMenuDirBruteTitle">Directory brute-force</string>
+    <string name="MainMenuDirBruteDescription">A module to find hidden directories and files into webservers</string>
+    
+    <string name="MainMenuSubDomainEnumTitle">Subdomain enumerator</string> 
+    <string name="MainMenuSubDomainEnumDescription">Subdomain enumerator based on Google, Bing and brute-force using and internal dictionary</string>
+    
+    <string name="MainMenuFtpBruteTitle">Ftp brute-force</string> 
+    <string name="MainMenuFtpBruteDescription">Ftp brute-force that can generate passwords using an internal list of common ones or generate passwords using an user-given alphabet</string>
+    
+    <string name="MainMenuTargetScannerTitle">Target Scanner</string> 
+    <string name="MainMenuTargetScannerDescription">Gather informations about the specified host</string>
+    
+    <string name="MainMenuRangeIpScannerTitle">Range IP scanner</string> 
+    <string name="MainMenuRangeIpScannerDescription">Scan the specified IP range for reachable hosts</string>
+    
+    <string name="MainMenuUsersEnumeratorTitle">Web User Enumerator</string>
+    <string name="MainMenuUsersEnumeratorDescription">bla bla bla</string>
+    
+    <string name="MainMenuSettingsTitle">Settings</string> 
+    <string name="MainMenuSettingsDescription">Droid Roach settings</string>
+    
+     <string name="MainMenuAboutTitle">About</string> 
+    <string name="MainMenuAboutDescription">About Droid Roach</string>   
+    
+    
+
+    <string name="DirBruteActivityDialogOkButton">Start</string>
+    <string name="DirBruteActivityDialogCancelButton">Cancel</string>
+	<string name="DirBruteActivityDialogTitle">Directory Brute-force</string>
+	<string name="DirBruteActivityDialogDescription">Write the website url</string>
+	<string name="DirBruteActivityDialogHint">http://TheWebSiteToTest.org</string>
+	<string name="DirBruteActivityDialogWarning">The specified url is not valid, check it and try again</string>
+	<string name="DirBruteActivityDialogWarningOkButton">OK</string>
+	
+	<string name="DirBruteActivityItemDialogTitle">Browser</string>
+	<string name="DirBruteActivityItemDialogDescription">Would you like to open the selected item in the browser?</string>
+	<string name="DirBruteActivityItemDialogOkButton">OK</string>
+	<string name="DirBruteActivityItemDialogCancelButton">Cancel</string>
+	<string name="DirBruteActivityScanStop">Stopping scan&#8230;</string>
+	
+	<string name="DirBruteActivityMenuExport">Export Result</string>
+	<string name="DirBruteActivityNothingToShare">Nothing to share</string>
+	<string name="DirBruteActivityMenuStop">Stop scan</string>
+	
+	
+	<string name="SubDomainBingLabel">Bing pages</string>
+	<string name="SubDomainGoogleLabel">Google pages</string>
+	<string name="SubDomainStartButton">Start</string>
+	<string name="SubDomainDictionaryCheck">Perform a brute-force search using an internal dictionary</string>
+	<string name="SubDomainDomainHint">Write the domain here</string>
+	<string name="SubDomainNoSearchSelected">Select at least one search method and try again</string>
+	<string name="SubDomainIncorrectInput">Fill in all the fields correctly and try again</string>
+	<string name="SubDomainInvalidDomain">Invalid value for the domain</string>
+	<string name="SubDomainCantStartSearch">You can\'t start another search, wait for the current search to finish and try again</string>
+	<string name="SubDomainGoogleBlocked">Looks like Google noticed the automated traffic, Google search is probably not going to work for a while</string>
+	<string name="SubDomainBingBlocked">Looks like Bing noticed the automated traffic, Bing search is probably not going to work for a while</string>
+	
+	<string name="SubDomainMenuExport">Export Result</string>
+	<string name="SubDomainNothingToShare">Nothing to share</string>
+	<string name="SubDomainMenuStop">Stop scan</string>
+	<string name="SubDomainScanStop">Stopping scan&#8230;</string>
+	<string name="SubDomainMenuScanAgain">Scan again excluding current results</string>
+	
+	<string name="FtpBruteIpLabel">Target Ip\\Domain and port</string>
+	<string name="FtpBruteUserLabel">User</string>
+	<string name="FtpBrutePasswordLabel">Password generator alphabet</string>
+	<string name="FtpBruteThreadsLabel">Threads</string>
+	<string name="FtpBrutePasswordLengthLabel">Password length</string>
+	
+	<string name="FtpBruteIpHint">e.g. 192.168.0.1</string>
+	<string name="FtpBrutePortHint">e.g. 21</string>
+	<string name="FtpBruteUserHint">e.g. root</string>
+	<string name="FtpBrutePasswordHint">e.g. [0&#8211;9]abc</string>
+	<string name="FtpBrutePasswordMinHint">min</string>
+	<string name="FtpBrutePasswordMaxHint">max</string>
+
+	<string name="FtpBruteButtonLowerAlphabet">[a&#8211;z]</string>
+	<string name="FtpBruteButtonUpperAlphabet">[A&#8211;Z]</string>
+	<string name="FtpBruteButtonNumbers">[0&#8211;9]</string>
+	<string name="FtpBruteButtonClear">Clear</string>
+	<string name="FtpBruteButtonStart">Start</string>
+	
+	<string name="FtpBruteRadioButtonPwdList">Use an internal password list</string>
+	<string name="FtpBruteRadioButtonPwdGenerator">Use a password generator</string>
+	
+	
+	<string name="FtpBruteDialogTitle">Brute-forcing</string>
+	<string name="FtpBruteDialogText">password(s) tried</string>
+	
+	<string name="FtpBruteInvalidTarget">Please specify a valid ip or domain</string>
+	<string name="FtpBruteInvalidPort">Please specify a valid port</string>
+	<string name="FtpBruteNoUser">Please specify an username</string>
+	<string name="FtpBruteNoPassword">Please specify an alphabet to generate passwords</string>
+	<string name="FtpBruteNoThreads">You must set at least one thread</string>
+	<string name="FtpBruteNoPasswordMinMax">Please specify minimum AND maximum password length</string>
+	<string name="FtpBruteInvalidPasswordLength">Please specify valid password length values</string>
+	
+	
+	<string name="FtpBruteResultInvalidDomain">The domain you have specified is unreachable or does not exist</string>
+	<string name="FtpBruteResultPasswordFound">Password found: </string>
+	<string name="FtpBruteResultNothingFound">Scan finished but nothing found</string>
+	<string name="FtpBruteResultTargetUnreachable">Unable to complete the scan, the rarget results unreachable</string>
+	<string name="FtpBruteResultDialogTitle">Brute-force result</string>
+	
+
+	<string name="TargetScannerActivityDialogOkButton">Next</string>
+    <string name="TargetScannerActivityDialogCancelButton">Cancel</string>
+	<string name="TargetScannerActivityDialogTitle">Target Scanner</string>
+	<string name="TargetScannerActivityDialogDescription">Write your target\'s IP or Domain</string>
+	<string name="TargetScannerActivityDialogWarning">The specified Target is not valid, check it and try again</string>
+	<string name="TargetScannerActivityDialogWarningOkButton">OK</string>
+	
+	<string name="TargetScannerActivityTarget">Target</string>
+	
+	<string name="TargetScannerActivityDialogScanTypeTitle">Scan type</string>
+	<string name="TargetScannerActivityDialogScanTypeDescription">Please choose a scan type</string>
+		
+	<string name="TargetScannerActivityDialogScanTypeSuperficial">Superficial scan</string>
+	<string name="TargetScannerActivityDialogScanTypeDeep">Deep scan</string>
+	<string name="TargetScannerActivityDialogScanTypeCustom">Custom</string>
+	
+
+	<string name="TargetScannerActivityScanningDialogText">Scanning</string>
+	<string name="TargetScannerActivityScanComplete">Scan complete</string>
+	
+	
+	
+	<string name="TargetScannerActivityDialogPortTitle">Port range</string>
+	<string name="TargetScannerActivityDialogPortText">Select a range of ports to scan(more are the ports, more is the time required to perform the scan)</string>
+	<string name="TargetScannerActivityDialogPortMinHint">20</string>
+	<string name="TargetScannerActivityDialogPortMaxHint">8080</string>
+	<string name="TargetScannerActivityDialogPortWarning">The specified port range is not valid, try again</string>
+	<string name="TargetScannerActivityDialogPortWarningOkButton">OK</string>
+	
+	
+	
+	
+	<string name="RangeIPScannerActivityDialogOkButton">Start</string>
+    <string name="RangeIPScannerActivityDialogCancelButton">Cancel</string>
+	<string name="RangeIPScannerActivityDialogTitle">Range IP Scanner</string>
+	<string name="RangeIPScannerActivityDialogDescription">Write an IP in CIDR format, e.g. 192.168.0.0/24 will scan from 192.168.0.1 to 192.168.0.254</string>
+	<string name="RangeIPScannerActivityDialogHint">192.168.0.1/24</string>
+	<string name="RangeIPScannerActivityDialogWarning">The specified CIDR is not valid, check it and try again</string>
+	<string name="RangeIPScannerActivityDialogWarningOkButton">OK</string>
+	
+	<string name="RangeIPScannerDialogTitle">Scanning</string>
+	<string name="RangeIPScannerDialogText">ip checked</string>
+	<string name="RangeIpScannerScanComplete">Scan complete!</string>
+	
+	
+	<string name="GenericShellOutputActivityTitle">Result</string>
+	<string name="GenericShellOutputActivityFailResult">An error occurred</string>
+	<string name="GenericShellOutputActivityDialogTitle">Executing</string>
+	<string name="GenericShellOutputActivityNoBusyBox">Looks like you don\'t have BusyBox installed</string>
+	
+	<string name="GenericQuitDialogTitle">Quit</string>
+	<string name="GenericQuitDialogDescription">Are you sure you want to go back? The current progress will be lost</string>
+	<string name="GenericQuitDialogOkButton">OK</string>
+	<string name="GenericQuitDialogCancelButton">Cancel</string>
+	
+	<string name="GenericDialogListShareTitle">Choose action</string>
+	<string name="GenericDialogListShareTargetScanner">Scan host</string>
+	<string name="GenericDialogListShareWhois">Whois</string>
+	<string name="GenericDialogListShareNsLookup">NsLookup</string>
+	<string name="GenericDialogListShareFtpBrute">Ftp brute-force</string>
+	
+	<string name="SettingsTitle">DroidRoach Settings</string>
+	<string name="SettingsDirBruteTitle">Directory Brute-force</string>
+	<string name="SettingsDirBruteThreads">Maximum number of Threads</string>
+	<string name="SettingsDirBruteDepth">Scan depth</string>
+	<string name="SettingsSubDomainTitle">Subdomain Enumerator</string>
+	<string name="SettingsSubDomainHumanMode">Human Mode</string>
+	<string name="SettingsSubDomainHumanSummary">Slower search but less chance to be detected as a bot from search engines</string>
+	
+	<string name="SettingsIpRangeScanner">Range IP Scanner</string>
+	<string name="SettingsIpRangeScannerThreads">Threads</string>
+	<string name="SettingsIpRangeScannerThreadsSummary">Number of threads used to perform the scan, increasing the number of threads you will go faster but will also be more detectable</string>
+	
+</resources>

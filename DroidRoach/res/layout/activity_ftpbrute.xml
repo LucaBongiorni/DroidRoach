@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="6dp" >
+
+        <EditText
+            android:id="@+id/editIp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/buttonClear"
+            android:layout_below="@+id/labelIp"
+            android:ems="10"
+            android:hint="@string/FtpBruteIpHint"
+            android:text="" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editPort"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/labelUser"
+            android:layout_alignRight="@+id/editUser"
+            android:ems="10"
+            android:hint="@string/FtpBrutePortHint"
+            android:inputType="number"
+            android:text="21" />
+
+        <TextView
+            android:id="@+id/labelIp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editIp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="6dp"
+            android:text="@string/FtpBruteIpLabel" />
+
+        <TextView
+            android:id="@+id/labelUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editIp"
+            android:layout_below="@+id/editIp"
+            android:layout_marginTop="8dp"
+            android:text="@string/FtpBruteUserLabel" />
+
+        <EditText
+            android:id="@+id/editUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/labelUser"
+            android:ems="10"
+            android:hint="@string/FtpBruteUserHint" />
+
+        <Button
+            android:id="@+id/buttonUpperAlphabet"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/buttonLowerAlphabet"
+            android:layout_toRightOf="@+id/buttonLowerAlphabet"
+            android:text="@string/FtpBruteButtonUpperAlphabet" />
+
+        <Button
+            android:id="@+id/buttonAddNumber"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/buttonUpperAlphabet"
+            android:layout_toRightOf="@+id/buttonUpperAlphabet"
+            android:text="@string/FtpBruteButtonNumbers" />
+
+        <EditText
+            android:id="@+id/editMaxPassword"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editMinPassword"
+            android:layout_alignBottom="@+id/editMinPassword"
+            android:layout_toRightOf="@+id/editMinPassword"
+            android:ems="10"
+            android:hint="@string/FtpBrutePasswordMaxHint"
+            android:inputType="number"
+            android:text="8" />
+
+        <SeekBar
+            android:id="@+id/seekBarThreads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/labelThreads"
+            android:layout_below="@+id/labelThreads"
+            android:max="25"
+            android:progress="6" />
+
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/seekBarThreads"
+            android:layout_below="@+id/seekBarThreads"
+            android:text="@string/FtpBruteButtonStart" />
+
+        <TextView
+            android:id="@+id/labelPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radioGroup1"
+            android:layout_below="@+id/radioGroup1"
+            android:layout_marginTop="8dp"
+            android:text="@string/FtpBrutePasswordLabel" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/labelPassword"
+            android:layout_below="@+id/labelPassword"
+            android:ems="10"
+            android:hint="@string/FtpBrutePasswordHint" />
+
+        <Button
+            android:id="@+id/buttonLowerAlphabet"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editPassword"
+            android:layout_below="@+id/editPassword"
+            android:text="@string/FtpBruteButtonLowerAlphabet" />
+
+        <Button
+            android:id="@+id/buttonClear"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editPassword"
+            android:layout_toRightOf="@+id/buttonAddNumber"
+            android:text="@string/FtpBruteButtonClear" />
+
+        <TextView
+            android:id="@+id/labelPasswordLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/buttonUpperAlphabet"
+            android:layout_marginTop="8dp"
+            android:text="@string/FtpBrutePasswordLengthLabel" />
+
+        <EditText
+            android:id="@+id/editMinPassword"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/labelPasswordLength"
+            android:layout_below="@+id/labelPasswordLength"
+            android:ems="10"
+            android:hint="@string/FtpBrutePasswordMinHint"
+            android:inputType="number"
+            android:text="4" />
+
+        <TextView
+            android:id="@+id/labelThreads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editMinPassword"
+            android:layout_below="@+id/editMinPassword"
+            android:layout_marginTop="15dp"
+            android:text="@string/FtpBruteThreadsLabel" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editUser"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/radioButtonPwdList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/FtpBruteRadioButtonPwdList"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonPwdGenerator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="True"
+                android:text="@string/FtpBruteRadioButtonPwdGenerator"
+                android:textSize="13sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</ScrollView>

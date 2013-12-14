@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:padding="5dp" >
+
+    <EditText
+        android:id="@+id/bingPages"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/googlePages"
+        android:layout_below="@+id/googlePages"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0" />
+
+    <EditText
+        android:id="@+id/domainName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/SubDomainDomainHint"
+        android:inputType="textUri"
+        android:textSize="15sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/googlePages"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/domainName"
+        android:layout_below="@+id/domainName"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0" />
+
+    <CheckBox
+        android:id="@+id/bruteForceCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bingPages"
+        android:layout_below="@+id/bingPages"
+        android:layout_marginTop="22dp"
+        android:text="@string/SubDomainDictionaryCheck"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="@string/SubDomainStartButton" />
+
+    <TextView
+        android:id="@+id/labelGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/googlePages"
+        android:layout_alignBottom="@+id/googlePages"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/googlePages"
+        android:text="@string/SubDomainGoogleLabel"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/labelBing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bingPages"
+        android:layout_alignBottom="@+id/bingPages"
+        android:layout_alignLeft="@+id/labelGoogle"
+        android:text="@string/SubDomainBingLabel"
+        android:textSize="14sp" />
+
+</RelativeLayout>

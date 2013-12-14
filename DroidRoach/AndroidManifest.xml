@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="esse.pentest.droidroach"
+    android:versionCode="1"
+    android:versionName="0.9b" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="esse.droidroach.core.RoachApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/dr_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="esse.droidroach.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:icon="@drawable/dr_icon"
+            android:label="@string/app_name"
+            android:logo="@drawable/dr_icon_act"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="esse.droidroach.module.dirbruteforce.Activity"
+            android:configChanges="orientation|keyboardHidden"
+            android:icon="@drawable/dr_icon"
+            android:label="@string/app_name"
+            android:logo="@drawable/dr_icon_act"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="esse.droidroach.module.subdomainenumerator.Activity"
+            android:configChanges="orientation|keyboardHidden"
+            android:icon="@drawable/dr_icon"
+            android:label="@string/app_name"
+            android:logo="@drawable/dr_icon_act"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="esse.droidroach.module.subdomainenumerator.Result"
+            android:configChanges="orientation|keyboardHidden"
+            android:icon="@drawable/dr_icon"
+            android:label="@string/app_name"
+            android:logo="@drawable/dr_icon_act"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="esse.droidroach.SettingsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:icon="@drawable/dr_icon"
+            android:label="@string/app_name"
+            android:logo="@drawable/dr_icon_act"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="esse.droidroach.module.ftpbruteforce.Activity"
+            android:configChanges="orientation|keyboardHidden"
+            android:icon="@drawable/dr_icon"
+            android:label="@string/app_name"
+            android:logo="@drawable/dr_icon_act"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="esse.droidroach.module.rangeipscanner.Activity"
+            android:configChanges="orientation|keyboardHidden"
+            android:icon="@drawable/dr_icon"
+            android:label="@string/app_name"
+            android:logo="@drawable/dr_icon_act"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="esse.droidroach.module.targetscanner.Activity"
+            android:configChanges="orientation|keyboardHidden"
+            android:icon="@drawable/dr_icon"
+            android:label="@string/app_name"
+            android:logo="@drawable/dr_icon_act"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="esse.droidroach.About"
+            android:configChanges="orientation|keyboardHidden"
+            android:icon="@drawable/dr_icon"
+            android:label="@string/app_name"
+            android:logo="@drawable/dr_icon_act"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="esse.droidroach.generic.GenericShellOutputActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:icon="@drawable/dr_icon"
+            android:label="@string/app_name"
+            android:logo="@drawable/dr_icon_act"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

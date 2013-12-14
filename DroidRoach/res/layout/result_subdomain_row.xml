@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="4dip" >
+
+
+
+    <TextView
+        android:id="@+id/subdomain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subdomain"
+        android:textColor="#040404"
+        android:textSize="12dip"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subdomain"
+        android:layout_marginTop="1dp"
+        android:text="Ip:"
+        android:textColor="#343434"
+        android:textSize="10dip"/>
+
+    <TextView
+        android:id="@+id/source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ip"
+        android:layout_marginTop="1dp"
+        android:text="Source:"
+        android:textColor="#343434"
+        android:textSize="10dip"
+        />
+
+</RelativeLayout>

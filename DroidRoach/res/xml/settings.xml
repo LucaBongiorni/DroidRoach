@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="@string/SettingsTitle">
+    <PreferenceScreen android:title="@string/SettingsDirBruteTitle">
+        <EditTextPreference android:key="DirBrute_threads_number" android:title="@string/SettingsDirBruteThreads" android:numeric="integer" android:order="0" android:defaultValue="6"/>
+        <EditTextPreference android:key="DirBrute_scan_depth" android:order="1" android:defaultValue="8" android:title="@string/SettingsDirBruteDepth" android:numeric="integer"/>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/SettingsSubDomainTitle">
+        <CheckBoxPreference android:order="0" android:title="@string/SettingsSubDomainHumanMode" android:summary="@string/SettingsSubDomainHumanSummary" android:defaultValue="false"/>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/SettingsIpRangeScanner">
+        <EditTextPreference  android:summary="@string/SettingsIpRangeScannerThreadsSummary" android:title="@string/SettingsIpRangeScannerThreads" android:key="IpRangeScanner_Threads" android:numeric="integer" android:order="0" android:defaultValue="60" />
+    </PreferenceScreen>
+    
+
+</PreferenceScreen>
